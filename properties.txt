@@ -1,0 +1,10 @@
+paring.kood
+paring.lehekylg
+keha.kood
+keha.nimi
+keha.esit_kpv
+keha.lehekylgede_arv
+keha.liikmed.item.isikukood
+keha.liikmed.item.eesnimi
+keha.liikmed.item.perenimi
+keha.liikmed.item.liikmeks_astumise_aeg

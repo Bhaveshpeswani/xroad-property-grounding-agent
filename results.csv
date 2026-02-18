@@ -1,0 +1,10 @@
+Property,Semantic Meaning,Final Classification,Final Empirically Groundable,Suggested Keywords,LLM Confidence
+paring.lehekylg,Page number in the result set,Technical/API parameter,No,"['page', 'result', 'set']",High
+keha.kood,Estonian political party registry code,Real-world entity,Yes,"['party', 'registry', 'code']",High
+keha.nimi,Name of the political party,Real-world entity,Yes,"['party name', 'Estonian politics']",High
+keha.esit_kpv,Date of submission,Real-world entity,Yes,"['submission date', 'date of registration']",High
+keha.lehekylgede_arv,Number of pages in the result set,Derived/metadata,No,"['page', 'result', 'set']",High
+keha.liikmed.item.isikukood,Personal identification code (Estonian: isikukode),Sensitive personal data,No,"['personal', 'identification', 'code']",High
+keha.liikmed.item.eesnimi,First name of a party member,Real-world entity,Yes,"['party', 'member', 'name']",High
+keha.liikmed.item.perenimi,Last name of a party member,Real-world entity,Yes,"['party member', 'last name']",High
+keha.liikmed.item.liikmeks_astumise_aeg,Date of membership submission,Real-world entity,Yes,"['membership', 'submission', 'date']",High

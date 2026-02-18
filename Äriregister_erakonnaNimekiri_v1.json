@@ -1,0 +1,65 @@
+{
+    "type": "object",
+    "properties": {
+        "paring": {
+            "type": "object",
+            "properties": {
+                "kood": {
+                    "type": "string",
+                    "description": "Estonian political party registry code; possible values are numeric strings of 1 to 8 digits; regex: ^\\d{1,8}$ // not unique // constraint: must be a numeric string between 1 and 8 digits"
+                },
+                "lehekylg": {
+                    "type": "string",
+                    "description": "Page number in the result set; possible values are positive integers; regex: ^[1-9]\\d*$ // not unique // constraint: must be a positive integer (no leading zeros)"
+                }
+            }
+        },
+        "keha": {
+            "type": "object",
+            "properties": {
+                "kood": {
+                    "type": "string",
+                    "description": "Estonian political party registry code; possible values are numeric strings of 1 to 8 digits; regex: ^\\d{1,8}$ // not unique // constraint: must be a numeric string between 1 and 8 digits"
+                },
+                "nimi": {
+                    "type": "string",
+                    "description": "Name of the political party; possible values are Estonian text strings (letters, spaces, hyphens, apostrophes, up to 255 characters); regex: ^[A-Za-z\u00d5\u00c4\u00d6\u00dc\u00f5\u00e4\u00f6\u00fc\\-\\' ]{1,255}$ // not unique // constraint: must be 1-255 characters, only Estonian letters, spaces, hyphens, apostrophes"
+                },
+                "esit_kpv": {
+                    "type": "string",
+                    "description": "Date of submission; possible values are dates in the format YYYY-MM-DD; regex: ^\\d{4}-\\d{2}-\\d{2}$ // not unique // constraint: must be a valid date in format YYYY-MM-DD"
+                },
+                "lehekylgede_arv": {
+                    "type": "string",
+                    "description": "Number of pages in the result set; possible values are positive integers; regex: ^[1-9]\\d*$ // not unique // constraint: must be a positive integer (no leading zeros)"
+                },
+                "liikmed": {
+                    "type": "object",
+                    "properties": {
+                        "item": {
+                            "type": "object",
+                            "properties": {
+                                "isikukood": {
+                                    "type": "string",
+                                    "description": "Estonian personal identification code; possible values are 11-digit numbers; regex: ^\\d{11}$ // not unique // constraint: must be exactly 11 digits"
+                                },
+                                "eesnimi": {
+                                    "type": "string",
+                                    "description": "First name of the party member; possible values are Estonian text strings (letters, hyphens, apostrophes, up to 100 characters); regex: ^[A-Za-z\u00d5\u00c4\u00d6\u00dc\u00f5\u00e4\u00f6\u00fc\\-\\' ]{1,100}$ // not unique // constraint: must be 1-100 characters, only Estonian letters, spaces, hyphens, apostrophes"
+                                },
+                                "perenimi": {
+                                    "type": "string",
+                                    "description": "Last name of the party member; possible values are Estonian text strings (letters, hyphens, apostrophes, up to 100 characters); regex: ^[A-Za-z\u00d5\u00c4\u00d6\u00dc\u00f5\u00e4\u00f6\u00fc\\-\\' ]{1,100}$ // not unique // constraint: must be 1-100 characters, only Estonian letters, spaces, hyphens, apostrophes"
+                                },
+                                "liikmeks_astumise_aeg": {
+                                    "type": "string",
+                                    "description": "Date of joining the party; possible values are dates in the format YYYY-MM-DD or YYYY-MM-DDZ; regex: ^\\d{4}-\\d{2}-\\d{2}(Z)?$ // not unique // constraint: must be a valid date in format YYYY-MM-DD or YYYY-MM-DDZ"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
