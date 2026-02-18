@@ -16,13 +16,13 @@ The primary service analyzed in this repository is:
 ---
 
 ## How Semantic Meanings Are Derived
-Property semantic meanings are derived using a locally deployed LLM (**Llama3 via Ollama**).
+Property semantic meanings are derived using a locally deployed LLM (**Llama3 via Ollama**)
 
 The model is constrained with a strict system prompt to:
 * Interpret the property strictly within the provided JSON structure.
 * Avoid hallucinating unrelated domains.
 * Prefer literal Estonian linguistic interpretation.
-* Respect hierarchical structure (e.g., `keha.liikmed.item.eesnimi`).
+* Respect hierarchical structure (e.g., `keha.liikmed.item.eesnimi`)
 
 > **Note:** The LLM output is not accepted automatically, All interpretations are manually validated before empirical grounding.
 
